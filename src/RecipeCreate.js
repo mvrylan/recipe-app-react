@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function RecipeCreate() {
+function RecipeCreate({ addRecipe }) {
 
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
   // TODO: Add the required input and textarea form elements.
@@ -21,8 +21,10 @@ function RecipeCreate() {
   }
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("SUBMITTED WITH GRACE", recipeData);
-    setRecipeData(initialFormState)
+    console.log("SUBMITTED AT CREATE LEVEL", recipeData);
+    const thisRecipe = recipeData;
+    addRecipe(thisRecipe);
+    setRecipeData(initialFormState);
   }
 
   return (
