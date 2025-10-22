@@ -3,7 +3,7 @@ import { fireEvent, render, screen, within } from "@testing-library/react";
 import App from "../App";
 import RecipeData from "../RecipeData";
 import userEvent from "@testing-library/user-event";
-import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/jest-dom'
 
 describe("App", () => {
   describe("includes necessary structure to create a recipe", () => {
