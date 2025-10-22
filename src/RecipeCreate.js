@@ -21,7 +21,6 @@ function RecipeCreate({ addRecipe }) {
   }
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("SUBMITTED AT CREATE LEVEL", recipeData);
     const thisRecipe = recipeData;
     addRecipe(thisRecipe);
     setRecipeData(initialFormState);

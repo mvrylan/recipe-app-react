@@ -15,7 +15,7 @@ function App() {
   }
 
   const removeRecipe = (indexToDelete) => {
-    console.log("REMOVED!!")
+    setRecipes((currentRecipes) => currentRecipes.filter((ignored, index) => index !== indexToDelete));
   }
   
   return (
