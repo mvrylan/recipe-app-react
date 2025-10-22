@@ -11,7 +11,7 @@ function App() {
   // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
 
   const addRecipe = (thisRecipe) => {
-    console.log("SUBMITTED AT APP LEVEL", thisRecipe);
+    setRecipes([...recipes, thisRecipe])
   }
 
   const removeRecipe = (indexToDelete) => {
