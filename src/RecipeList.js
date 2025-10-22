@@ -1,6 +1,6 @@
 import React from "react";
 
-function RecipeList({ recipes, RemoveRecipe }) {
+function RecipeList({ recipes }) {
   
   // TODO: Display the list of recipes using the structure of table that is provided.
   // TODO: Create at least one additional component that is used by this component.
@@ -21,11 +21,11 @@ function RecipeList({ recipes, RemoveRecipe }) {
         </thead>
         <tbody>
           {recipes.map((recipe, index) => (
-            <tr>
+            <tr key={index}>
               <td>{recipe.name}</td>
               <td>{recipe.cuisine}</td>
-              <td>
-                <img src={recipe.photo} style={{ maxWidth:"50px" }} />
+              <td> {/* FIX NULL BY END OF PROJECT */}
+                <img src={null} style={{ maxWidth:"50px" }}></img>
               </td>
               <td>{recipe.ingredients}</td>
               <td>{recipe.preparation}</td>
