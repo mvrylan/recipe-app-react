@@ -25,7 +25,7 @@ function RecipeList({ recipes, removeRecipe }) {
               <td>{recipe.name}</td>
               <td>{recipe.cuisine}</td>
               <td> {/* FIX NULL BY END OF PROJECT */}
-                <img src={null} style={{ maxWidth:"50px" }}></img>
+                <img src={recipe.photo} alt={"Photo Not Found"} style={{ maxWidth:"50px" }}></img>
               </td>
               <td>{recipe.ingredients}</td>
               <td>{recipe.preparation}</td>
