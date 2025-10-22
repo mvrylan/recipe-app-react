@@ -48,12 +48,12 @@ function RecipeCreate({ addRecipe }) {
             </td>
             <td>
               <label htmlFor="ingredients">
-                <input id="ingredients" type="text" name="ingredients" onChange={handleChange} value={recipeData.ingredients} />
+                <textarea id="ingredients" type="text" name="ingredients" onChange={handleChange} value={recipeData.ingredients} />
               </label>
             </td>
             <td>
               <label htmlFor="preparation">
-                <input id="preparation" type="text" name="preparation" onChange={handleChange} value={recipeData.preparation} />
+                <textarea id="preparation" type="text" name="preparation" onChange={handleChange} value={recipeData.preparation} />
               </label>
             </td>
             <td>
