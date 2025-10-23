@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "public/index.js",
+  "main": "public/index.html",
   "sandpackVersion": "0.10.11",
   "dependencies": {
     "@babel/runtime": "7.28.4",
