@@ -34,7 +34,7 @@
     "@testing-library/user-event": "^14.6.1",
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://yourusername.github.io/recipe-app-react",
+  "homepage": "https://mvrylan.github.io/recipe-app-react/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
