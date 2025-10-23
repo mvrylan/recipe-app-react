@@ -1,4 +1,5 @@
 import React from "react";
+import RecipeCard from "./RecipeCard";
 
 function RecipeList({ recipes, removeRecipe }) {
   
@@ -22,13 +23,7 @@ function RecipeList({ recipes, removeRecipe }) {
         <tbody>
           {recipes.map((recipe, index) => (
             <tr key={index}>
-              <td>{recipe.name}</td>
-              <td>{recipe.cuisine}</td>
-              <td> {/* FIX NULL BY END OF PROJECT */}
-                <img src={recipe.photo} alt={"Photo Not Found"} style={{ maxWidth:"50px" }}></img>
-              </td>
-              <td>{recipe.ingredients}</td>
-              <td>{recipe.preparation}</td>
+              <RecipeCard recipe={recipe} removeRecipe={removeRecipe} /> 
               <td>
                 <button name="delete" onClick={() => removeRecipe(index)}>Delete</button>
               </td>
