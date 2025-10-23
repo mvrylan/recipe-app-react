@@ -1,6 +1,6 @@
 import React from "react";
 
-function RecipeCard({ recipe, removeRecipe }) {
+function RecipeCard({ recipe, removeRecipe, index }) {
   return (
     <>
       <td>{recipe.name}</td>
@@ -10,6 +10,9 @@ function RecipeCard({ recipe, removeRecipe }) {
       </td>
       <td>{recipe.ingredients}</td>
       <td>{recipe.preparation}</td>
+      <td>
+        <button name="delete" onClick={() => removeRecipe(index)}>Delete</button>
+      </td>
     </>
   )
 }

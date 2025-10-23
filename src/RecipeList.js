@@ -23,10 +23,7 @@ function RecipeList({ recipes, removeRecipe }) {
         <tbody>
           {recipes.map((recipe, index) => (
             <tr key={index}>
-              <RecipeCard recipe={recipe} removeRecipe={removeRecipe} /> 
-              <td>
-                <button name="delete" onClick={() => removeRecipe(index)}>Delete</button>
-              </td>
+              <RecipeCard recipe={recipe} removeRecipe={removeRecipe} index={index}/> 
             </tr>
           ))}
         </tbody>
