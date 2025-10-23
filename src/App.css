@@ -32,6 +32,8 @@ thead th, tfoot th {
 th {
   letter-spacing: 2px;
   padding: 10px;
+  background-color: white;
+  text-align: center;
 }
 
 td {
@@ -41,6 +43,12 @@ td {
   font-size: 12px;
   padding: 10px;
   text-align: center;
+}
+
+img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
 }
 
 /* table */
@@ -60,7 +68,32 @@ table {
   text-overflow: ellipsis;
 }
 
-/* Column Size for thead */
+tr:nth-child(odd) {
+    background-color: #fff0c7;
+}
 
+/* Column Size for thead */
+th:nth-child(-n+3) {
+    width: 10%
+}
+
+th:nth-child(n+4):nth-child(-n+5) {
+    width: 30%
+}
+
+th:nth-child(6) {
+    width: 10%
+}
 
 /* Column size for tbody */
+td:nth-child(-n+3) {
+    width: 10%
+}
+
+td:nth-child(n+4):nth-child(-n+5) {
+    width: 30%
+}
+
+td:nth-child(6) {
+    width: 10%
+}

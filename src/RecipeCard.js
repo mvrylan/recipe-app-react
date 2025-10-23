@@ -6,10 +6,10 @@ function RecipeCard({ recipe, removeRecipe, index }) {
       <td>{recipe.name}</td>
       <td>{recipe.cuisine}</td>
       <td>
-        <img src={recipe.photo === "" ? null : recipe.photo} alt={"Photo Not Found"} style={{ maxWidth:"50px" }}></img>
+        <img src={recipe.photo === "" ? null : recipe.photo} alt={"Photo Not Found"} ></img>
       </td>
-      <td>{recipe.ingredients}</td>
-      <td>{recipe.preparation}</td>
+      <td className="content_td"><p>{recipe.ingredients}</p></td>
+      <td className="content_td"><p>{recipe.preparation}</p></td>
       <td>
         <button name="delete" onClick={() => removeRecipe(index)}>Delete</button>
       </td>

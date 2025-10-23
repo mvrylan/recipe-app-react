@@ -1,7 +1,0 @@
-th {
-    background-color: white;
-}
-
-tr:nth-child(odd) {
-    background-color: #fff0c7;
-}
