@@ -14,11 +14,9 @@ function App() {
     setRecipes([...recipes, thisRecipe])
   }
 
-  
   const removeRecipe = (indexToDelete) => {
     setRecipes((currentRecipes) => currentRecipes.filter((ignored, index) => index !== indexToDelete));
   }
-  
   
   return (
     <div className="App">

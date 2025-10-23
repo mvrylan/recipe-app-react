@@ -1,5 +1,6 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
+import "./RecipeList.css";
 
 function RecipeList({ recipes, removeRecipe }) {
   
