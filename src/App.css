@@ -6,8 +6,10 @@
 
 label {
   display: inline-block;
-  width: 99%;
-  margin: 1px;
+}
+
+input {
+  box-sizing: border-box;
 }
 
 header {
